@@ -6,6 +6,9 @@
     <title>Akshay Patra</title>
 </head>
 <body>
-    Hello World
+    <h1>All my jobs</h1>
+    {% for job in jobs.all %}
+        {{ job.summary }}
+    {% endfor %}
 </body>
 </html>
